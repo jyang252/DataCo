@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad Mini</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js" integrity="sha512-rCZdHNB0AePry6kAnKAVFMRfWPmUXSo+/vlGtrOUvhsxD0Punm/xWbEh+8vppPIOzKB9xnk42yCRZ5MD/jvvjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <body onload="initializeLonLat()">
+    <h2 id="hello_tag">Block creation kit</h2>
+
+    <button id="makeApiCall" onclick="makeApiCall()">Create block</button>
+
+    <button id="addLongitude" onclick="addLongitude(10)">add 10 to speed (horizontally) of block</button> 
+    <button id="subLongitude" onclick="subLongitude(10)">subtract 10 to speed (horizontally) of block</button>
+    <button id="addLatitude" onclick="addLat(10)">add 10 speed (vertically) to block</button>
+    <button id="subLatitude" onclick="subLat(10)">subtract 10 speed (vertically) to block</button>
+
+    <div id="drawingArea"></div>
+
+    <script src="api_demo.js"></script>
+    <script src="launchpad.js"></script>
+
+</body>
+</html>
